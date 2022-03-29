@@ -1,0 +1,120 @@
+<html><head>
+		<!-- MISC/META -->
+		<title>LofiPen ~ Lofi Beats, Maximize Writing</title>
+		<meta charset="utf-8">
+		<meta name="description" content="Lofipen - A minimal text editor, made to stay out of the way while you get the words down.">
+
+		<!-- CSS -->
+		<link href="//fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet">
+		<link href="css/fonts.css" rel="stylesheet">
+	</head>
+
+	<body class="yin">
+		<div class="overlay">
+			<div class="wordcount modal">
+				<h1>Target Word Count</h1>
+				<div>
+					<input type="number" name="quantity" value="0" min="0">
+				</div>
+			</div>
+
+			<div class="saveoverlay modal">
+				<h1>Select save format</h1>
+				<p class="saveselection">
+					<span data-format="markdown">Markdown</span>
+					<span data-format="html">HTML</span>
+					<span data-format="plain">Plain Text</span>
+				</p>
+				<button class="savebutton useicons"></button>
+				<div>
+					Or select format and press ctrl+c (cmd+c on mac) to copy the text.
+				</div>
+				<textarea class="hiddentextbox"></textarea>
+			</div>
+		</div>
+
+		<div class="text-options" style="top: 168.333px; left: 449.589px;">
+			<div class="options">
+				<span class="no-overflow">
+					<span class="lengthen ui-inputs">
+						<button class="url useicons"></button>
+						<input class="url-input" type="text" placeholder="Type or Paste URL here">
+						<button class="bold">b</button>
+						<button class="italic">i</button>
+						<button class="quote">”</button>
+					</span>
+				</span>
+			</div>
+		</div>
+
+		<div class="ui">
+			<div class="wrapper">
+				<div class="top editing">
+					<button class="fullscreen useicons" title="Toggle fullscreen">
+						
+					</button>
+
+					<button class="color-flip useicons" title="Invert colors">
+						
+					</button>
+
+					<button class="target useicons" title="Set target word count">
+						
+					</button>
+					<button class="save useicons" title="Save Text">
+						
+					</button>
+				</div>
+
+				<div class="bottom">
+					<a class="about" href="https://www.buymeacoffee.com/tholman" target="_blank">
+						☕
+					</a>
+				</div>
+			</div>
+		</div>
+
+		<div class="word-counter">
+			<span class="progress"></span>
+		</div>
+
+		<section>
+			<header contenteditable="true" class="header">This is LofiPen</header>
+			<article contenteditable="true" class="content"><p>A minimalist writing zone, where you can block out all distractions and get to what's important. The writing!  </p><p> 	To get started, all you need to do is delete this text (seriously, just highlight it and hit delete), and fill the page with your own fantastic words. You can even change the title!  </p> <p> 	You can use <b>bold</b>, <i>italics</i>, <b><i>both</i></b> and <a href="http://Lofipen.io"> urls </a> just by highlighting the text and selecting them from the tiny options box that appears above it.</p><blockquote>	Quotes are easy to add too!</blockquote><p>	If you're using LofiPen, and want to contribute a few dollars, there's a small donate button on the bottom left.</p><p>Happy Typing! ~ <b>Sajjad Haq</b></p></article>
+		</section>
+
+		<!-- LIBS -->
+		<script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script src="js/libs/FileSaver.min.js"></script>
+		<script src="js/libs/Blob.min.js"></script>
+		<script src="js/libs/screenfull.min.js"></script>
+
+		<!-- JS -->
+		<script src="js/default.js"></script>
+		<script src="js/utils.js"></script>
+		<script src="js/editor.js"></script>
+		<script src="js/ui.js"></script>
+		<script type="text/javascript">
+			// Initiate LofiPen
+			LofiPen.editor.init();
+			LofiPen.ui.init();
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-38039699-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-38039699-1");
+		</script>
+
+    <div class=playback>
+    <div data-video="5qap5aO4i9A" data-autoplay="1" data-loop="1" id="youtube-audio"></div>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://cdn.rawgit.com/labnol/files/master/yt.js"></script>
+  </div>
+
+</body></html>
