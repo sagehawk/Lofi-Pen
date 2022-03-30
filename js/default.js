@@ -12,4 +12,4 @@ A knock off website of zenpen.io with lofi radio playing in the background. Have
 <blockquote>\
 	Quotes are easy to add too!\
 </blockquote>\
-<p>Happy Typing! ~ <b>Sajjad Haq</b></p>';
+<p>Have fun ~ <b>Sajjad Haq</b></p>';
