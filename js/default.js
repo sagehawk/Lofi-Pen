@@ -1,7 +1,7 @@
 var defaultTitle = 'This is LofiPen';
 var defaultContent =
 '<p>\
-A chill writing zone where you can write freely and unapologetically.  \
+A knock off website of zenpen.io with lofi radio playing in the background. Have a chill writing experience and write freely because everything is stored locally.  \
 </p>\
 <p> \
 	To get started, all you need to do is delete this text (seriously, just highlight it and hit delete), and fill the page with your own fantastic words. You can even change the title!  \
