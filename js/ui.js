@@ -6,7 +6,7 @@ LofiPen.ui = (function() {
 	var body, article, uiContainer, overlay, header;
 
 	// Buttons
-	var screenSizeElement, colorLayoutElement, targetElement, saveElement;
+	var screenSizeElement, colorLayoutElement, targetElement, saveElement, pauseElement;
 
 	// Word Counter
 	var wordCountValue, wordCountBox, wordCountElement, wordCounter, wordCounterProgress;
@@ -18,6 +18,10 @@ LofiPen.ui = (function() {
 	var shrinkScreenIcon = '&#xe004;';
 
 	var darkLayout = false;
+
+	var pauseIcon = '&#xf28c;';
+	var playIcon = '&#xf01d;';
+	var currentIcon = pauseIcon;
 
 	function init() {
 
@@ -31,7 +35,7 @@ LofiPen.ui = (function() {
 			loadState();
 		}
 
-		console.log( "Checkin under the hood eh? We've probably got a lot in common. You should totally check out LofiPen on github! (https://github.com/tholman/Lofipen)." );
+		console.log( "Checkin under the hood eh? We've probably got a lot in common. You should totally check out CafePen on github! (https://github.com/sagehawk220/Lofipen)." );
 	}
 
 	function loadState() {
@@ -82,6 +86,8 @@ LofiPen.ui = (function() {
 		targetElement = document.querySelector( '.target ');
 		targetElement.onclick = onTargetClick;
 
+		pauseElement.onclick = onPauseClick;
+
 		//init event listeners only if browser can save
 		if (supportsSave) {
 
@@ -117,6 +123,15 @@ LofiPen.ui = (function() {
 
 		header = document.querySelector( '.header' );
 		header.onkeypress = onHeaderKeyPress;
+	}
+
+	function onPauseClick( event ) {
+		if ( currentIcon == pauseIcon) {
+			currentIcon = playIcon;
+		}
+		else {
+			currentIcon = pauseIcon;
+		}
 	}
 
 	function onScreenSizeClick( event ) {
